@@ -1,4 +1,4 @@
-# gazebo_ros 仿真使用说明
+# wheel-legged-gazebo-ros 仿真使用说明
 
 
 ## 1. 环境搭建
@@ -31,7 +31,7 @@
 ## 2、编译
 
 ```
-cd wheel_legged_gazebo_ros
+cd wheel-legged-gazebo-ros
 catkin_make install
 ```
 
@@ -39,7 +39,7 @@ catkin_make install
 
 ## 3、运行
 
-- 运行`wheel_legged_gazebo_ros`仿真的同时，还需要运行一个基于`limx_robot_sdk`实现的运动控制算法程序。仿真运行流程如下图所示。
+- 运行`wheel-legged-gazebo-ros`仿真的同时，还需要运行一个基于`limxsdk-for-lowlevel`实现的运动控制算法程序。仿真运行流程如下图所示。
 
 ![](doc/img.png)
 
