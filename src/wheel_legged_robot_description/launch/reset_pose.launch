@@ -1,0 +1,22 @@
+<launch>
+    <node pkg="rosservice" type="rosservice" name="reset_configuration" args="call /gazebo/set_model_configuration
+        '{model_name: wheel_legged_robot, joint_names:[
+        'LF_HAA','LF_HFE','LF_KFE',
+        'LH_HAA','LH_HFE','LH_KFE',
+        'RF_HAA','RF_HFE','RF_KFE',
+        'RH_HAA','RH_HFE','RH_KFE'],
+        joint_positions: [
+         0.3, -0.4, 0.0,
+         0.3, -0.4, 0.0,
+        -0.3, -0.4, 0.0,
+        -0.3, -0.4, 0.0]}'" />
+
+    <node pkg="rosservice" type="rosservice" name="reset_pose" args="call /gazebo/set_model_state
+    '{model_state: { model_name: wheel_legged_robot, pose: {
+        position: { x: 0., y: 0, z: 0.55 },
+        orientation: { w: 1, x: 0, y: 0, z: 0  } },
+        twist: {
+            linear: {x: 0 , y: 0 ,z: 0 } ,
+            angular: { x: 0 , y: 0 , z: 0 } } ,
+        reference_frame: world } }'" />
+</launch>

@@ -1,0 +1,15 @@
+<launch>
+    <rosparam file="$(find legged_gazebo)/config/default_legged.yaml" command="load"/>
+
+    <param name="wheel_legged_robot_description" command="cat $(find wheel_legged_robot_description)/urdf/robot.urdf"/>
+
+    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+    <!-- push robot_description to factory and spawn robot in gazebo -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" clear_params="true"
+          args="-param wheel_legged_robot_description
+          -urdf
+          -z 0.4
+          -model wheel_legged_robot" output="screen"/>
+</launch>
