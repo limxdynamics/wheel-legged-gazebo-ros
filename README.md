@@ -64,5 +64,6 @@ catkin_make install
   ```
   limx@limx:~/limxsdk-for-lowlevel/build$ ./examples/wl_standup
   ```
-  
+- 运行效果如下：
+  <video src="doc/simulator.mkv"></video>
   
