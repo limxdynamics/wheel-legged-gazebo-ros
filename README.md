@@ -66,4 +66,3 @@ catkin_make install
   ```
 - 运行效果如下：
   <video src="doc/simulator.mkv"></video>
-  
