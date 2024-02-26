@@ -5,7 +5,7 @@
 
 - 安装Ubuntu 20.04 桌面操作系统
 
-- 按此链接安装ROS：http://wiki.ros.org/noetic/Installation/Ubuntu，选择“ros-noetic-desktop-full”进行安装
+- 按此链接安装ROS：http://wiki.ros.org/noetic/Installation/Ubuntu ，选择“ros-noetic-desktop-full”进行安装
 
 - 按以下shell命令安装其它依赖：
 
