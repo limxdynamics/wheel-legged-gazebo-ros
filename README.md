@@ -59,7 +59,7 @@ catkin_make install
   roslaunch wheel_legged_robot_description reset_pose.launch
   ```
 
-- 开启另一个终端：运行一个基于`limxsdk-for-lowlevel`实现的运动控制算法程序
+- 开启另一个终端：运行一个基于 [limxsdk-for-lowlevel](https://github.com/limxdynamics/limxsdk-for-lowlevel) 实现的运动控制算法程序
 
   ```
   limx@limx:~/limxsdk-for-lowlevel/build$ ./examples/wl_standup
