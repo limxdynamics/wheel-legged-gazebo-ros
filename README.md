@@ -60,7 +60,7 @@ catkin_make install
   ```
 
 - 开启另一个终端：运行一个基于 [limxsdk-for-lowlevel](https://github.com/limxdynamics/limxsdk-for-lowlevel) 实现的运动控制算法程序
-
+  
   ```
   limx@limx:~/limxsdk-for-lowlevel/build$ ./examples/wl_standup
   ```
