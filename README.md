@@ -39,7 +39,7 @@ catkin_make install
 
 ## 3、运行
 
-- 运行`wheel-legged-gazebo-ros`仿真的同时，还需要运行一个基于`limxsdk-for-lowlevel`实现的运动控制算法程序。仿真运行流程如下图所示。
+- 运行`wheel-legged-gazebo-ros`仿真的同时，还需要运行一个基于 [limxsdk-for-lowlevel](https://github.com/limxdynamics/limxsdk-for-lowlevel) 实现的运动控制算法程序。仿真运行流程如下图所示。
 
 ![](doc/img.png)
 
@@ -49,14 +49,6 @@ catkin_make install
   source /opt/ros/noetic/setup.bash
   source install/setup.bash
   roslaunch wheel_legged_robot_description empty_world.launch
-  ```
-
-- 开启一个终端：复位仿真机器人
-
-  ```
-  source /opt/ros/noetic/setup.bash
-  source install/setup.bash
-  roslaunch wheel_legged_robot_description reset_pose.launch
   ```
 
 - 开启另一个终端：运行一个基于 [limxsdk-for-lowlevel](https://github.com/limxdynamics/limxsdk-for-lowlevel) 实现的运动控制算法程序

@@ -18,7 +18,7 @@
 #include <hardware_interface/ContactSensorInterface.h>
 #include <hardware_interface/HybridJointInterface.h>
 #include <realtime_tools/realtime_buffer.h>
-#include "limxsdk/simulator/wheel_legged_sim.h"
+#include "limxsdk/wheel_legged_sim.h"
 
 namespace legged_gazebo
 {
