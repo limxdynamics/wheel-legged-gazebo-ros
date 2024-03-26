@@ -151,6 +151,7 @@ namespace legged_gazebo
         {
             limxsdk::RobotState state;
 
+            state.stamp = ros::Time::now().toNSec();
             state.q.resize(joint_names_.size());
             state.dq.resize(joint_names_.size());
             state.tau.resize(joint_names_.size());
